@@ -23,7 +23,7 @@ The project uses exploratory data analysis (EDA), statistical modeling, and deco
 ├── ...
 ├── ...
 ├── data/                     # Downloaded Allen dataset (parquet)
-├── figures/                  # Generated plots and figures
+├── figures/                  # Plots and figures
 ├── README.md                 # Project description and instructions
 ```
 
