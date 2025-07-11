@@ -1,6 +1,6 @@
 # NMA Allen Visual Behavior 2p
 
-![Allen](figures/Allen.png)
+![CD Task.png](figures/AllenTask.png)
 
 
 ## Project Overview
