@@ -60,7 +60,7 @@ From the `mean_trace` vectors, we computed biologically relevant signal features
 These features formed the input space for statistical analysis and supervised classification.
 
 
-
+![Allen Visual Task](figures/fe.png)
 
 
 
@@ -75,6 +75,10 @@ To test the effects of omission, exposure, and cell type on neural activity:
 
 This revealed strong prediction-error dynamics in VIP neurons, particularly under **familiar + omitted** conditions.
 
+![Allen Visual Task](figures/1.png)
+![Allen Visual Task](figures/2.png)
+
+
 ### 4. 🔍 Spike Inference with CASCADE
 
 In parallel, we also analyzed raw calcium traces using **CASCADE**, a state-of-the-art deep learning model for supervised spike inference ([Berens et al., 2021](https://www.nature.com/articles/s41593-021-00880-4)):
@@ -82,6 +86,12 @@ In parallel, we also analyzed raw calcium traces using **CASCADE**, a state-of-t
 - **CASCADE output**: `spike_prob` — estimated spike probability per time bin
 - We extracted spike-based features (e.g., average spike rate in different bins) and repeated the full factorial ANOVA
 - These results corroborated our findings using traditional calcium features
+
+- ![Allen Visual Task](figures/9.png)
+- ![Allen Visual Task](figures/10.png)
+
+
+
 
 ### 5. 🤖 Machine Learning Pipeline
 
@@ -130,11 +140,15 @@ The best-performing model (Gradient Boosting) achieved:
 ## 🗂️ Project Structure
 ├── EDA.ipynb # Exploratory data analysis
 
-├── calcium_analysis.ipynb # Event-locked signal extraction
+├── event-locked-calcium-signal_preprocessing&feature extraction_per-cell.ipynb # Event-locked signal extraction per-cell(preprocessing) and Feature extraction(processing)
 
 ├── modeling.ipynb # Classifier training & evaluation
 
-├── cascade_spike_inference.ipynb # CASCADE-based spike analysis
+├── event-locked-calcium-signal-MVPA  # multivariate pattern analysis on unprocessed dataset(Time Resolved Decoding)
+
+├── event-locked-calcium-signal-Hypothesis_testing_per-cell # testing hypothesis with ANOVA and post-hoc
+
+├── event-locked-calcium-signal-cascade model.ipynb # CASCADE-based spike analysis
 
 ├── figures/ # Plots and visualizations
 
