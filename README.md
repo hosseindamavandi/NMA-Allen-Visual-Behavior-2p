@@ -152,8 +152,6 @@ The best-performing model (Gradient Boosting) achieved:
 
 ├── figures/ # Plots and visualizations
 
-├── data/ # Processed signal and metadata
-
 ├── README.md # Project overview
 
 ---
