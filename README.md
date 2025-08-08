@@ -29,6 +29,8 @@ We focused on **VIP** and **SST** neurons in the primary visual cortex (V1), exp
 
 Our analysis pipeline was designed to investigate prediction-error signaling in VIP and SST neurons using calcium imaging data from the **Allen Visual Behavior 2-Photon (2P) dataset**. The pipeline consists of the following key stages:
 
+![Allen Visual Task](figures/diagram.png)
+
 ### 1. 🧹 Preprocessing
 
 - **Baseline Correction**: We first applied baseline correction to calcium fluorescence traces to normalize across trials.
@@ -42,6 +44,10 @@ Our analysis pipeline was designed to investigate prediction-error signaling in 
 
 Each `mean_trace` was a vector representing the average event-locked calcium signal for that condition.
 
+![Allen Visual Task](figures/3.png)
+
+
+
 ### 2. ⚙️ Feature Extraction
 
 From the `mean_trace` vectors, we computed biologically relevant signal features such as:
@@ -52,6 +58,11 @@ From the `mean_trace` vectors, we computed biologically relevant signal features
 - **Slope & Timing Windows**
 
 These features formed the input space for statistical analysis and supervised classification.
+
+
+
+
+
 
 ### 3. 🧪 Statistical Analysis
 
